@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/safe-lia-mark.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f5ef" />
+    <meta name="description" content="Hitta företag att kontakta för din LIA, granska officiella kontaktvägar och förbered ditt CV med SafeLIA AI." />
+    <title>SafeLIA AI — nästa steg mot din LIA</title>
+    <script>
+      try {
+        const storedTheme = localStorage.getItem("safelia-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch {
+        // The theme remains light if browser storage is unavailable.
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

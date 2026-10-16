@@ -1,0 +1,101 @@
+@import "@fontsource/saira/500.css";
+@import "@fontsource/saira/600.css";
+@import "@fontsource/saira/700.css";
+@import "@fontsource/work-sans/400.css";
+@import "@fontsource/work-sans/500.css";
+@import "@fontsource/work-sans/600.css";
+@import "@fontsource/work-sans/700.css";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-edge: var(--edge);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+  --color-coral: var(--coral);
+  --color-danger: var(--danger);
+  --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Saira", "Work Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  --page: #f3f5ef;
+  --surface: #ffffff;
+  --surface-soft: #e9efe8;
+  --ink: #183b33;
+  --muted: #5b7066;
+  --edge: #dce5dc;
+  --brand: #176b53;
+  --brand-strong: #0e523e;
+  --brand-soft: #e0f2e7;
+  --on-brand: #ffffff;
+  --coral: #e47c68;
+  --danger: #b84034;
+}
+
+.dark {
+  color-scheme: dark;
+  --page: #111d19;
+  --surface: #192923;
+  --surface-soft: #22372e;
+  --ink: #eff6f0;
+  --muted: #b4c4ba;
+  --edge: #344b3f;
+  --brand: #75d9a2;
+  --brand-strong: #9be8b8;
+  --brand-soft: #213d30;
+  --on-brand: #10271b;
+  --coral: #ff9c86;
+  --danger: #ff9f94;
+}
+
+@layer base {
+  html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+  }
+
+  #main-content {
+    scroll-margin-top: 1rem;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--page);
+    color: var(--ink);
+    font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--coral);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--brand-soft);
+    color: var(--ink);
+  }
+}

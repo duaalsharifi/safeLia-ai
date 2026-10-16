@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <!-- SafeLIA Student Portal Logomark -->
+  <!-- Two connected entities: Student / Host / Institution connected via verified review loop -->
+  
+  <!-- Left entity / foundation loop (Deep Forest #193D35) -->
+  <path d="M 88 64
+           A 48 48 0 1 0 136 112
+           L 136 128
+           A 60 60 0 0 1 76 188
+           C 48 188 32 170 32 142
+           C 32 110 56 64 88 64 Z"
+        fill="none"
+        stroke="#193D35"
+        stroke-width="14"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+
+  <!-- Right entity / optimistic progress loop (Fresh Green #75D9A2) -->
+  <path d="M 168 192
+           A 48 48 0 1 0 120 144
+           L 120 128
+           A 60 60 0 0 1 180 68
+           C 208 68 224 86 224 114
+           C 224 146 200 192 168 192 Z"
+        fill="none"
+        stroke="#75D9A2"
+        stroke-width="14"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+
+  <!-- Integrated Verification / Review Point: Clean angled checkmark nestled at core -->
+  <path d="M 98 128
+           L 122 152
+           L 166 98"
+        fill="none"
+        stroke="#193D35"
+        stroke-width="14"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+
+  <!-- Distinct focal nexus node (Soft Coral #FE8A71) - active connection/review pulse -->
+  <circle cx="128" cy="128" r="7.5" fill="#FE8A71" />
+  
+  <!-- Subtle accent dot reinforcing guidance and peer oversight -->
+  <circle cx="168" cy="74" r="7" fill="#FE8A71" />
+</svg>

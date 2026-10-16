@@ -23,11 +23,10 @@ function Home() {
               För studenter • Med hjälp av AI
             </span>
 
-            <h1 className="mt-6 text-5xl font-bold leading-tight text-slate-900 lg:text-6xl">
-              Hitta tryggare LIA-platser med hjälp av AI
+<h1 className="mt-6 text-5xl font-bold leading-tight text-slate-900 dark:text-white lg:text-6xl">              Hitta tryggare LIA-platser med hjälp av AI
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg text-slate-600">
+            <p className="mt-6 max-w-xl text-lg text-slate-600 dark:text-slate-300">
               SafeLIA AI hjälper studenter att hitta företag,
               jämföra praktikmöjligheter och fatta bättre beslut
               inför sin LIA.
